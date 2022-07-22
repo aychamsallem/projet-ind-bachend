@@ -34,10 +34,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "files/views");
+app.use('/',ApiRouter);
 app.listen(5000, () => {
   console.log("listning port 5000 ...");
 
-  app.use('/',ApiRouter);
 
 });
 

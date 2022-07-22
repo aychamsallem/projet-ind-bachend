@@ -7,10 +7,10 @@ import {
     Addreservation
   } from "../controllers/Apireseravtion.js";
 import {
-  Admin
-  }  from "../controllers/Apiadmin.js";
+  Addchambre
+  }  from "../controllers/Apichambre.js";
 
   router.route("/reservation").post( Addreservation);
-  router.route("/Admin").post(Admin);
+  router.route("/chambre").post(Addchambre);
   
 export default router 
