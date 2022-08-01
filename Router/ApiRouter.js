@@ -12,5 +12,19 @@ import {
 
   router.route("/reservation").post( Addreservation);
   router.route("/chambre").post(Addchambre);
+
+
+  import {
+    AdminEdit
+    }  from "../controllers/ApiAdminEdit.js";
+    router.route("/chambre").post(AdminEdit);
+
   
+    import {
+      Getchambre
+      }  from "../controllers/Apigetchambre.js";
+      router.route("/getchambre").get(Getchambre);
+
+
+      
 export default router 
